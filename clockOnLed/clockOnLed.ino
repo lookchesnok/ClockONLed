@@ -3,11 +3,11 @@
 #include <Adafruit_NeoPixel.h>
 #include <DS3231.h>
 #include "small4pt7b.h"
-//#include <IRremote.h>
-#define LED 8
+#include <IRremote.h>
+#define LED_PIN 8
 //#define RECV_PIN 11
 
-Adafruit_NeoMatrix matrix = Adafruit_NeoMatrix(21, 11, LED,
+Adafruit_NeoMatrix matrix = Adafruit_NeoMatrix(21, 11, LED_PIN,
 	NEO_MATRIX_TOP + NEO_MATRIX_LEFT +
 	NEO_MATRIX_ROWS + NEO_MATRIX_ZIGZAG,
 	NEO_GRB + NEO_KHZ800);
