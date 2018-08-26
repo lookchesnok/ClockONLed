@@ -43,6 +43,7 @@ const unsigned long upCommand = 16736925; //0xFF629D
 const unsigned long leftCommand = 16720605; //0xFF22DD
 const unsigned long rightCommand = 16761405; //0xFFC23D
 const unsigned long downCommand = 16754775; // 0xFFA857
+const unsigned long repeatCommand = 16754775; //0xFFA857
 
 bool showTime = true;
 bool showDate = false;
@@ -57,10 +58,10 @@ void loop() {
 		case downCommand:
 			showDate = false;
 			break;
+
 		default:
 			break;
 		}
-
 		irrecv.resume(); // Receive the next value
 	}
 
