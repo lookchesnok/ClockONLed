@@ -6,7 +6,7 @@
 #include <IRremote.h>
 #define LED_PIN 8
 #define RECV_PIN 11
-
+//test
 Adafruit_NeoMatrix matrix = Adafruit_NeoMatrix(21, 11, LED_PIN,
 	NEO_MATRIX_TOP + NEO_MATRIX_LEFT +
 	NEO_MATRIX_ROWS + NEO_MATRIX_ZIGZAG,
